@@ -11,21 +11,21 @@
 
 <body>
     {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg bg-light ps-4">
+    <nav class="navbar navbar-expand-lg bg-dark ps-4">
         <div class="container-fluid">
-            <a class="navbar-brand fs-1 fw-bold" href="/">BeeFlix</a>
+            <a class="navbar-brand fs-1 fw-bold text-white" href="/">BeeFlix</a>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg bg-light ps-4">
+    <nav class="navbar navbar-expand-lg bg-dark ps-4">
         <div class="container-fluid">
             <div class="d-grid gap-2 d-md-block">
-                <a class="btn btn-primary" href="{{ url()->previous() }}" role="button"> <svg
+                <a class="btn btn-danger" href="{{ url()->previous() }}" role="button"> <svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>&nbsp;&nbsp;View Previous</a>
-                <a class="btn btn-primary" href="/" role="button"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                <a class="btn btn-danger" href="/" role="button"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
                         height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
                         <path
                             d="M1 2a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v1h.5A1.5 1.5 0 0 1 16 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-.55a2.5 2.5 0 0 1-2.45 2h-8A2.5 2.5 0 0 1 1 12.5V2zm13 10h.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5H14v8zM13 2H2v10.5A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V2z" />
@@ -36,19 +36,19 @@
 
     {{-- Content / Body --}}
     @foreach ($Genre as $gen)
-        <div class="card ps-4 mt-4 border-0">
-            <div class="card-title fs-2 fw-bold text-center">{{ $gen->name }}</div>
+        <div class="card ps-4 pt-4 border-0 rounded-0 bg-dark">
+            <div class="card-title fs-2 fw-bold text-center text-white">{{ $gen->name }}</div>
             <div class="card-body">
                 <div class="row">
                     @foreach ($gen->movies as $movie)
                         <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-title text-center fs-5 mt-4">{{ $movie->title }}</div>
+                            <div class="card bg-secondary">
+                                <div class="card-title text-center fs-5 mt-4 text-white">{{ $movie->title }}</div>
                                 <div class="card-body">
                                     <img class="img-fluid" style="height: 600px" src="{{ $movie->photo }}"
                                         alt="{{ $movie->title }}'s Poster">
                                     <div class="d-flex justify-content-center">
-                                        <a class="btn btn-primary mt-4 align-middle" href="/movie/{{ $movie->id }}"
+                                        <a class="btn btn-danger mt-4 align-middle" href="/movie/{{ $movie->id }}"
                                             role="button">View
                                             Movie</a>
                                     </div>

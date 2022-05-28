@@ -58,7 +58,7 @@ class DatabaseSeeder extends Seeder
             'genre_id' => 1,
             'title' => 'The Lord of the Rings: The Return of the King',
             'photo' => 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg',
-            'description' => 'Gandalf and Aragorn lead the World of Men against Sauron&#39;s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.',
+            'description' => 'Gandalf and Aragorn lead the World of Men against Sauron\'s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.',
             'rating' => 9.8
         ]);
 
@@ -66,7 +66,7 @@ class DatabaseSeeder extends Seeder
 
         Movie::create([
             'genre_id' => 2,
-            'title' => 'Harry Potter and the Sorcerer&#39;s Stone',
+            'title' => 'Harry Potter and the Sorcerer\'s Stone',
             'photo' => 'https://m.media-amazon.com/images/M/MV5BMzkyZGFlOWQtZjFlMi00N2YwLWE2OWQtYTgxY2NkNmM1NjMwXkEyXkFqcGdeQXVyNjY1NTM1MzA@._V1_FMjpg_UX1000_.jpg',
             'description' => 'An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.',
             'rating' => 7.6
@@ -92,7 +92,7 @@ class DatabaseSeeder extends Seeder
             'genre_id' => 2,
             'title' => 'Harry Potter and the Order of the Phoenix',
             'photo' => 'https://m.media-amazon.com/images/M/MV5BMTM0NTczMTUzOV5BMl5BanBnXkFtZTYwMzIxNTg3._V1_FMjpg_UX1000_.jpg',
-            'description' => 'With their warning about Lord Voldemort&#39;s return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.',
+            'description' => 'With their warning about Lord Voldemort\'s return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.',
             'rating' => 7.5
         ]);
 
@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
             'genre_id' => 3,
             'title' => 'Breaking Bad',
             'photo' => 'https://m.media-amazon.com/images/M/MV5BODFhZjAwNjEtZDFjNi00ZTEyLThkNzUtMjZmOWM2YjQwODFmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg',
-            'description' => 'A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family&#39;s future.',
+            'description' => 'A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family\'s future.',
             'rating' => 9.5
         ]);
 
