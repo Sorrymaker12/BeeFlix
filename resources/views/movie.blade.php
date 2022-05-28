@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title mb-4 fs-2 text-white">{{ $Movie->title }}</h5>
+                        <h5 class="card-title mb-4 fs-2 text-white"><strong>{{ $Movie->title }}</strong></h5>
                         <p class="card-text mb-4 text-white"><strong>Description : </strong>{{ $Movie->description }}
                         </p>
                         <p class="card-text mb-4 text-white"><strong> Genre : </strong> <a
